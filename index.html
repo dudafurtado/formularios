@@ -22,17 +22,47 @@
 
       padding: 60px 200px;
     }
+    header {
+      width: 100%;
 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-bottom: 26px;
+    }
+    article {
+      height: 80%;
+    }
+    h2 {
+      text-align: center;
+    }
     select, option {
       background-color: var(--blue);
       color: var(--light);
     }
-
     select {
-      width: 250px;
-      height: 28px;
+      width: 290px;
+      height: 38px;
 
       border-radius: 12px;
+
+      margin-bottom: 50px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      all: unset;
+      cursor: pointer;
+
+      padding: 12px 20px;
+      border-radius: 12px;
+      background-color: var(--blue);
+      color: var(--light);
     }
   </style>
 </head>
@@ -47,10 +77,9 @@
   </header>
   <article>
     <h2>Confira através de uma pesquisa alguns dos exercícios de formulários e suas peculiaridades em input e botões</h2>
-    <form action="http://127.0.0.1:5500/index.html">
-      <label for=""></label>
+    <form onSubmit="preventingDefault(event)">
       <select name="" id="">
-        <option value="">Escolha e aperte "redirecionar"</option>
+        <option value="" disabled>Escolha e aperte "redirecionar"</option>
         <option value="/cadastro/index.html">Cadastro + Residência no Brasil</option>
         <option value="./cadastro 2.0/index.html">Cadastro + Fidelidade</option>
         <option value="./checkbox/index.html">Pesquisa Parâmetro Social</option>
@@ -60,10 +89,9 @@
         <option value="./login/index.html">Login</option>
         <option value="./login 2.0/index.html">Login 2.0</option>
         <option value="./login 3.0/index.html">Login 3.0</option>
-        <option value="./musica/index.html">Música</option>
-        <option value="./radio/index.html"></option>
-        <option value="./traducao/index.html"></option>
-        <option value="./youtube/index.html"></option>
+        <option value="./radio/index.html">Radio</option>
+        <option value="./traducao/index.html">Google Tradutor</option>
+        <option value="./youtube/index.html">Pesquisa no Youtube</option>
       </select>
       <button type="submit" class="redirection">Redirecionar</button>
     </form>
@@ -71,16 +99,12 @@
 </body>
 
 <script>
-  const redirection = document.querySelector('.redirection');
-
-  redirection.addEventListener('click', (event) => {
-    const page = event.target.value;
-    console.log(page)
-    window.location.href = page;
-  })
+  const select = document.querySelector('select');
 
   const preventingDefault = (e) => {
     e.preventDefault();
+
+    window.location.href = select.value;
   }
 </script>
 </html>
