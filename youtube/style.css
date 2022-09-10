@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:royalblue;
+    color:lightyellow;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    height: 100vh;
+}
+
+label {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+input {
+    width: 380px;
+    height: 50px;
+    padding: 18px 16px;
+
+    background-color: lightyellow;
+
+    font-weight: bold;
+    color: royalblue;
+
+}
+
+input::placeholder {
+    color: rgb(65, 105, 225, 0.6);
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+
+    background-color: lightyellow;
+    padding: 12px 22px;
+    border-radius: 15px;
+
+    color: royalblue;
+    font-size: 18px;
+    font-weight: 700;
+}

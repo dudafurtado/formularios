@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecionamento</title>
+
+  <style>
+    body {
+      --orange: #F57449;
+      --blue: #20438d;
+      --light: #ffffe4;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      background-color: var(--orange);
+      color: var(--light);
+
+      padding: 60px 200px;
+    }
+
+    select, option {
+      background-color: var(--blue);
+      color: var(--light);
+    }
+
+    select {
+      width: 250px;
+      height: 28px;
+
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Oii, Duda Furtado aqui</h1>
+    <nav>
+      <a href="">Linkedin</a>
+      <a href="">GitHub</a>
+    </nav>
+  </header>
+  <article>
+    <h2>Confira através de uma pesquisa alguns dos exercícios de formulários e suas peculiaridades em input e botões</h2>
+    <form action="http://127.0.0.1:5500/index.html">
+      <label for=""></label>
+      <select name="" id="">
+        <option value="">Escolha e aperte "redirecionar"</option>
+        <option value="/cadastro/index.html">Cadastro + Residência no Brasil</option>
+        <option value="./cadastro 2.0/index.html">Cadastro + Fidelidade</option>
+        <option value="./checkbox/index.html">Pesquisa Parâmetro Social</option>
+        <option value="./cidade-natal/index.html">Selecionar Residência no Exterior</option>
+        <option value="./google/index.html">Pesquisando no Google</option>
+        <option value="./IMC/index.html">Indice de Massa Corporal</option>
+        <option value="./login/index.html">Login</option>
+        <option value="./login 2.0/index.html">Login 2.0</option>
+        <option value="./login 3.0/index.html">Login 3.0</option>
+        <option value="./musica/index.html">Música</option>
+        <option value="./radio/index.html"></option>
+        <option value="./traducao/index.html"></option>
+        <option value="./youtube/index.html"></option>
+      </select>
+      <button type="submit" class="redirection">Redirecionar</button>
+    </form>
+  </article>
+</body>
+
+<script>
+  const redirection = document.querySelector('.redirection');
+
+  redirection.addEventListener('click', (event) => {
+    const page = event.target.value;
+    console.log(page)
+    window.location.href = page;
+  })
+
+  const preventingDefault = (e) => {
+    e.preventDefault();
+  }
+</script>
+</html>

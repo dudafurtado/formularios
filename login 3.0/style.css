@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --grey: ;
+    --blue: ; 
+    
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(46, 100, 117);
+    color: rgb(189, 185, 164);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+label {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(189, 185, 164);
+}
+
+.email {
+    margin-bottom: 38px;
+}
+
+.senha {
+    margin-bottom: 42px;
+}
+
+input {
+    all: unset;
+
+    width: 300px;
+    height: 32px;
+
+    padding: 11px;
+    background-color: rgb(189, 185, 164);
+    
+    color: rgb(46, 100, 117);
+
+    margin-left: 45px;
+}
+
+input::placeholder {
+    color: rgb(46, 100, 117, 0.6);
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(46, 100, 117);
+ 
+    background-color: rgb(189, 185, 164);
+    padding: 15px 30px;
+    border-radius: 8px;
+}

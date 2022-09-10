@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: deepskyblue;
+    color: gold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    
+    margin-bottom: 42px;
+}
+
+label {
+    font-size: 30px;
+    font-weight: bold;
+    color: indigo;
+
+    margin-right: 16px;
+}
+
+.email {
+    margin-bottom: 38px;
+}
+
+.senha {
+    margin-bottom: 42px;
+}
+
+input {
+    all: unset;
+
+    width: 300px;
+    height: 32px;
+
+    padding: 11px;
+    background-color: gold;
+
+    color: indigo;
+}
+
+input::placeholder {
+    color: rgb(75, 0, 130, 0.4);
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+
+    font-size: 16px;
+ 
+    background-color: indigo;
+    padding: 15px 30px;
+    border-radius: 8px;
+}

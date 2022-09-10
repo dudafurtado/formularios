@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <section>
+        <h1>Hora do cadastro</h1>
+        <form action="">
+            <div class="campos">
+                <label for="name">Nome</label>
+                <input class="informacoes" id="name" type="text" required>
+            </div>
+            <div class="campos">
+                <label for="email">Email</label>
+                <input class="informacoes" id="email" type="email" required>
+            </div>
+            <div class="campos">
+                <label for="senha">Senha <span>(senhas diferentes)</span></label>
+                <input class="informacoes" id="senha" type="password" required>
+            </div>
+            <div class="campos">
+                <label for="senha-dnv">Repita a senha <span>(senhas diferentes)</span></label>
+                <input class="informacoes" id="senha-dnv" type="password" required>
+            </div>
+            <div class="diferente">
+                <label class="back" for="">Já é cliente?</label>
+                <div class="options">
+                    <label for="sim">
+                        Sim
+                        <input id="sim" class="pointer" type="radio" name="sim-ou-nao">
+                    </label>
+                    <label for="nao">
+                        Não
+                        <input id="nao" class="pointer" type="radio" name="sim-ou-nao" checked>
+                    </label>
+                </div>
+                <button type="submit">cadastrar</button>
+            </div>
+
+        </form>
+    </section>
+</body>
+
+</html>

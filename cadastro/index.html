@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <section>
+        <h1>Formulário de Cadastro</h1>
+        <form action="">
+            <div class="campos">
+                <label for="name">Nome</label>
+                <input class="informacoes" id="name" type="text" required>
+            </div>
+            <div class="campos">
+                <label for="email">Email</label>
+                <input class="informacoes" id="email" type="email" required>
+            </div>
+            <div class="campos">
+                <label for="celular">Celular</label>
+                <input class="informacoes" id="celular" type="number" required>
+            </div>
+            <div class="campos">
+                <label for="senha">Senha<span>(senhas diferentes)</span></label>
+                <input class="informacoes" id="senha" type="password" required>
+            </div>
+            <div class="campos">
+                <label for="senha-dnv">Confirme a senha<span>(senhas diferentes)</span></label>
+                <input class="informacoes" id="senha-dnv" type="password" required>
+            </div>
+            <div class="diferente">
+                <label for="">De qual estado você é?
+                </label>
+                <select id="estados">
+                    <option value="">Selecione um estado</option>
+                    <option value="">Alagoas (AL)</option>
+                    <option value="">Amapá (AP)</option>
+                    <option value="">Acre (AC)</option>
+                    <option value="">Amazonas (AM)</option>
+                    <option value="">Bahia (BA)</option>
+                    <option value="">Ceará (CE)</option>
+                    <option value="">Distrito Federal (DF)</option>
+                    <option value="">Espírito Santo (ES)</option>
+                    <option value="">Goiás (GO)</option>
+                    <option value="">Maranhão (MA)</option>
+                    <option value="">Mato Grosso (MT)</option>
+                    <option value="">Mato Grosso do Sul (MS)</option>
+                    <option value="">Minas Gerais (MG)</option>
+                    <option value="">Pará (PA)</option>
+                    <option value="">Paraíba (PB)</option>
+                    <option value="">Paraná (PR)</option>
+                    <option value="">Pernambuco (PE)</option>
+                    <option value="">Piauí (PI)</option>
+                    <option value="">Rio de Janeiro (RJ)</option>
+                    <option value="">Rio Grande do Norte (RN)</option>
+                    <option value="">Rio Grande do Sul (RS)</option>
+                    <option value="">Rondônia (RO)</option>
+                    <option value="">Roraima (RR)</option>
+                    <option value="">Santa Catarina (SC)</option>
+                    <option value="">São Paulo (SP)</option>
+                    <option value="">Sergipe (SE)</option>
+                    <option value="">Tocantins (TO)</option>
+                </select>
+                <button type="submit">cadastrar</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

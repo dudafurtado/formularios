@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    background-color: lightcoral;
+    color: lawngreen;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+
+    background-color: lawngreen;
+    padding: 22px 40px;
+    border-radius: 18px;
+
+    color: lightcoral;
+    font-weight: 700;
+}
